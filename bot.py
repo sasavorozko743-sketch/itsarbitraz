@@ -7,7 +7,7 @@ from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKe
 from aiogram.filters import CommandStart
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-ADMIN_ID = 7458769714, 1772108483 # сюди свій Telegram ID
+ADMIN_ID = int(os.getenv("ADMIN_ID", "0")) 
 
 ASSET = "USDT"
 FIAT = "UAH"
